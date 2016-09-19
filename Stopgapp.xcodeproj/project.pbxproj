@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9324FF641A46995D00A07580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324FF631A46995D00A07580 /* AppDelegate.swift */; };
+		9324FF661A46995D00A07580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324FF651A46995D00A07580 /* ViewController.swift */; };
+		9324FF691A46995D00A07580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9324FF671A46995D00A07580 /* Main.storyboard */; };
+		9324FF6B1A46995D00A07580 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9324FF6A1A46995D00A07580 /* Images.xcassets */; };
+		9324FF6E1A46995D00A07580 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9324FF6C1A46995D00A07580 /* LaunchScreen.xib */; };
+		9324FF7A1A46995D00A07580 /* StopgappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324FF791A46995D00A07580 /* StopgappTests.swift */; };
+		9324FF841A469BE900A07580 /* ImageUnavailable.png in Resources */ = {isa = PBXBuildFile; fileRef = 9324FF831A469BE900A07580 /* ImageUnavailable.png */; };
+		9324FF861A469CB700A07580 /* PicVoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324FF851A469CB700A07580 /* PicVoteTableViewCell.swift */; };
+		9324FF881A469E5D00A07580 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324FF871A469E5D00A07580 /* Post.swift */; };
+		93917C911A4912F1003F56E7 /* downvote.png in Resources */ = {isa = PBXBuildFile; fileRef = 93917C901A4912F1003F56E7 /* downvote.png */; };
+		93917C931A4912F9003F56E7 /* upvote.png in Resources */ = {isa = PBXBuildFile; fileRef = 93917C921A4912F9003F56E7 /* upvote.png */; };
+		93917C951A49182E003F56E7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93917C941A49182E003F56E7 /* CameraViewController.swift */; };
+		93BEF9391A539BA000F33AD5 /* CameraOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93BEF9381A539BA000F33AD5 /* CameraOverlay.xib */; };
+		93BEF93B1A539EFA00F33AD5 /* CameraOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BEF93A1A539EFA00F33AD5 /* CameraOverlay.swift */; };
+		93BEF93D1A53A4A900F33AD5 /* cameraCapture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BEF93C1A53A4A900F33AD5 /* cameraCapture@2x.png */; };
+		93BF48E31A54F88700A3F2B7 /* EditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF48E21A54F88700A3F2B7 /* EditPostViewController.swift */; };
+		93BFE8181A57409B00F5F3E3 /* autoscaling-2011-01-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8091A57409B00F5F3E3 /* autoscaling-2011-01-01.json */; };
+		93BFE8191A57409B00F5F3E3 /* cognito-identity-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE80A1A57409B00F5F3E3 /* cognito-identity-2014-06-30.json */; };
+		93BFE81A1A57409B00F5F3E3 /* css-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE80B1A57409B00F5F3E3 /* css-2014-06-30.json */; };
+		93BFE81B1A57409B00F5F3E3 /* dynamodb-2012-08-10.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE80C1A57409B00F5F3E3 /* dynamodb-2012-08-10.json */; };
+		93BFE81C1A57409B00F5F3E3 /* ec2-2014-09-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE80D1A57409B00F5F3E3 /* ec2-2014-09-01.json */; };
+		93BFE81D1A57409B00F5F3E3 /* elasticloadbalancing-2012-06-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE80E1A57409B00F5F3E3 /* elasticloadbalancing-2012-06-01.json */; };
+		93BFE81E1A57409B00F5F3E3 /* email-2010-12-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE80F1A57409B00F5F3E3 /* email-2010-12-01.json */; };
+		93BFE81F1A57409B00F5F3E3 /* kinesis-2013-12-02.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8101A57409B00F5F3E3 /* kinesis-2013-12-02.json */; };
+		93BFE8201A57409B00F5F3E3 /* mobileanalytics-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8111A57409B00F5F3E3 /* mobileanalytics-2014-06-30.json */; };
+		93BFE8211A57409B00F5F3E3 /* monitoring-2010-08-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8121A57409B00F5F3E3 /* monitoring-2010-08-01.json */; };
+		93BFE8221A57409B00F5F3E3 /* s3-2006-03-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8131A57409B00F5F3E3 /* s3-2006-03-01.json */; };
+		93BFE8231A57409B00F5F3E3 /* sdb-2009-04-15.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8141A57409B00F5F3E3 /* sdb-2009-04-15.json */; };
+		93BFE8241A57409B00F5F3E3 /* sns-2010-03-31.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8151A57409B00F5F3E3 /* sns-2010-03-31.json */; };
+		93BFE8251A57409B00F5F3E3 /* sqs-2012-11-05.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8161A57409B00F5F3E3 /* sqs-2012-11-05.json */; };
+		93BFE8261A57409B00F5F3E3 /* sts-2011-06-15.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BFE8171A57409B00F5F3E3 /* sts-2011-06-15.json */; };
+		93BFE8281A57416100F5F3E3 /* AWSiOSSDKv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BFE8271A57416100F5F3E3 /* AWSiOSSDKv2.framework */; };
+		93BFE82A1A57418500F5F3E3 /* AWSCognitoSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BFE8291A57418500F5F3E3 /* AWSCognitoSync.framework */; };
+		93BFE82C1A576BD400F5F3E3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BFE82B1A576BD400F5F3E3 /* CoreLocation.framework */; };
+		93BFE8301A57A2B600F5F3E3 /* AWSconstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BFE82F1A57A2B600F5F3E3 /* AWSconstants.m */; };
+		93BFE8341A59EB4700F5F3E3 /* DDBTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BFE8331A59EB4700F5F3E3 /* DDBTableRow.m */; };
+		93C05AE61A47C6DC006F06BD /* MultiMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C05AE51A47C6DC006F06BD /* MultiMediaView.swift */; };
+		93C05AE81A47C793006F06BD /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C05AE71A47C793006F06BD /* Comment.swift */; };
+		93C147481A8BC13400566765 /* DDBCommentRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C147471A8BC13400566765 /* DDBCommentRow.m */; };
+		93C26D731A55F792004A31E0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C26D721A55F792004A31E0 /* libsqlite3.dylib */; };
+		93C26D751A55F79E004A31E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C26D741A55F79E004A31E0 /* libz.dylib */; };
+		93C331B91A46C607004ECEAB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C331B81A46C607004ECEAB /* DetailViewController.swift */; };
+		93C3338B1A563E9D009B4954 /* AWShelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C3338A1A563E9D009B4954 /* AWShelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9324FF741A46995D00A07580 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9324FF561A46995D00A07580 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9324FF5D1A46995D00A07580;
+			remoteInfo = Stopgapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9324FF5E1A46995D00A07580 /* Stopgapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopgapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9324FF621A46995D00A07580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9324FF631A46995D00A07580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9324FF651A46995D00A07580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9324FF681A46995D00A07580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9324FF6A1A46995D00A07580 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9324FF6D1A46995D00A07580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9324FF731A46995D00A07580 /* StopgappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopgappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9324FF781A46995D00A07580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9324FF791A46995D00A07580 /* StopgappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopgappTests.swift; sourceTree = "<group>"; };
+		9324FF831A469BE900A07580 /* ImageUnavailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageUnavailable.png; sourceTree = "<group>"; };
+		9324FF851A469CB700A07580 /* PicVoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicVoteTableViewCell.swift; sourceTree = "<group>"; };
+		9324FF871A469E5D00A07580 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		93917C901A4912F1003F56E7 /* downvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downvote.png; sourceTree = "<group>"; };
+		93917C921A4912F9003F56E7 /* upvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upvote.png; sourceTree = "<group>"; };
+		93917C941A49182E003F56E7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		93BEF9381A539BA000F33AD5 /* CameraOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraOverlay.xib; sourceTree = "<group>"; };
+		93BEF93A1A539EFA00F33AD5 /* CameraOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOverlay.swift; sourceTree = "<group>"; };
+		93BEF93C1A53A4A900F33AD5 /* cameraCapture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraCapture@2x.png"; sourceTree = "<group>"; };
+		93BF48E21A54F88700A3F2B7 /* EditPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPostViewController.swift; sourceTree = "<group>"; };
+		93BFE8091A57409B00F5F3E3 /* autoscaling-2011-01-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "autoscaling-2011-01-01.json"; sourceTree = "<group>"; };
+		93BFE80A1A57409B00F5F3E3 /* cognito-identity-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cognito-identity-2014-06-30.json"; sourceTree = "<group>"; };
+		93BFE80B1A57409B00F5F3E3 /* css-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "css-2014-06-30.json"; sourceTree = "<group>"; };
+		93BFE80C1A57409B00F5F3E3 /* dynamodb-2012-08-10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dynamodb-2012-08-10.json"; sourceTree = "<group>"; };
+		93BFE80D1A57409B00F5F3E3 /* ec2-2014-09-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ec2-2014-09-01.json"; sourceTree = "<group>"; };
+		93BFE80E1A57409B00F5F3E3 /* elasticloadbalancing-2012-06-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "elasticloadbalancing-2012-06-01.json"; sourceTree = "<group>"; };
+		93BFE80F1A57409B00F5F3E3 /* email-2010-12-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "email-2010-12-01.json"; sourceTree = "<group>"; };
+		93BFE8101A57409B00F5F3E3 /* kinesis-2013-12-02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kinesis-2013-12-02.json"; sourceTree = "<group>"; };
+		93BFE8111A57409B00F5F3E3 /* mobileanalytics-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mobileanalytics-2014-06-30.json"; sourceTree = "<group>"; };
+		93BFE8121A57409B00F5F3E3 /* monitoring-2010-08-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "monitoring-2010-08-01.json"; sourceTree = "<group>"; };
+		93BFE8131A57409B00F5F3E3 /* s3-2006-03-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "s3-2006-03-01.json"; sourceTree = "<group>"; };
+		93BFE8141A57409B00F5F3E3 /* sdb-2009-04-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sdb-2009-04-15.json"; sourceTree = "<group>"; };
+		93BFE8151A57409B00F5F3E3 /* sns-2010-03-31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sns-2010-03-31.json"; sourceTree = "<group>"; };
+		93BFE8161A57409B00F5F3E3 /* sqs-2012-11-05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sqs-2012-11-05.json"; sourceTree = "<group>"; };
+		93BFE8171A57409B00F5F3E3 /* sts-2011-06-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sts-2011-06-15.json"; sourceTree = "<group>"; };
+		93BFE8271A57416100F5F3E3 /* AWSiOSSDKv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSiOSSDKv2.framework; sourceTree = "<group>"; };
+		93BFE8291A57418500F5F3E3 /* AWSCognitoSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognitoSync.framework; sourceTree = "<group>"; };
+		93BFE82B1A576BD400F5F3E3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		93BFE82D1A57A28800F5F3E3 /* AWSconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSconstants.h; sourceTree = "<group>"; };
+		93BFE82F1A57A2B600F5F3E3 /* AWSconstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSconstants.m; sourceTree = "<group>"; };
+		93BFE8321A59EB3600F5F3E3 /* DDBTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBTableRow.h; sourceTree = "<group>"; };
+		93BFE8331A59EB4700F5F3E3 /* DDBTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBTableRow.m; sourceTree = "<group>"; };
+		93C05AE51A47C6DC006F06BD /* MultiMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMediaView.swift; sourceTree = "<group>"; };
+		93C05AE71A47C793006F06BD /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		93C147471A8BC13400566765 /* DDBCommentRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBCommentRow.m; sourceTree = "<group>"; };
+		93C147491A8BC15400566765 /* DDBCommentRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBCommentRow.h; sourceTree = "<group>"; };
+		93C26D721A55F792004A31E0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		93C26D741A55F79E004A31E0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		93C26D761A55F859004A31E0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		93C26D771A55F859004A31E0 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FMDB.framework; sourceTree = "<group>"; };
+		93C26D781A55F859004A31E0 /* GZIP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GZIP.framework; sourceTree = "<group>"; };
+		93C26D791A55F859004A31E0 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mantle.framework; sourceTree = "<group>"; };
+		93C26D7A1A55F859004A31E0 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reachability.framework; sourceTree = "<group>"; };
+		93C26D7B1A55F859004A31E0 /* TMCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TMCache.framework; sourceTree = "<group>"; };
+		93C26D7C1A55F859004A31E0 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UICKeyChainStore.framework; sourceTree = "<group>"; };
+		93C26D7D1A55F859004A31E0 /* XMLDictionary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XMLDictionary.framework; sourceTree = "<group>"; };
+		93C26DA61A55FAA9004A31E0 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		93C331B81A46C607004ECEAB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		93C3338A1A563E9D009B4954 /* AWShelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWShelper.m; sourceTree = "<group>"; };
+		93C3338C1A563EB5009B4954 /* AWShelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWShelper.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9324FF5B1A46995D00A07580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BFE82C1A576BD400F5F3E3 /* CoreLocation.framework in Frameworks */,
+				93BFE8281A57416100F5F3E3 /* AWSiOSSDKv2.framework in Frameworks */,
+				93C26D751A55F79E004A31E0 /* libz.dylib in Frameworks */,
+				93C26D731A55F792004A31E0 /* libsqlite3.dylib in Frameworks */,
+				93BFE82A1A57418500F5F3E3 /* AWSCognitoSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9324FF701A46995D00A07580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9324FF551A46995D00A07580 = {
+			isa = PBXGroup;
+			children = (
+				93C26D741A55F79E004A31E0 /* libz.dylib */,
+				93C26D721A55F792004A31E0 /* libsqlite3.dylib */,
+				93C26DA51A55F8D1004A31E0 /* Frameworks */,
+				93C26DA41A55F8B1004A31E0 /* JsonFils */,
+				9324FF601A46995D00A07580 /* Stopgapp */,
+				9324FF761A46995D00A07580 /* StopgappTests */,
+				9324FF5F1A46995D00A07580 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9324FF5F1A46995D00A07580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9324FF5E1A46995D00A07580 /* Stopgapp.app */,
+				9324FF731A46995D00A07580 /* StopgappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9324FF601A46995D00A07580 /* Stopgapp */ = {
+			isa = PBXGroup;
+			children = (
+				93917C8F1A4912C0003F56E7 /* Images */,
+				9324FF631A46995D00A07580 /* AppDelegate.swift */,
+				93BFE82E1A57A29600F5F3E3 /* AWS */,
+				93C26DA61A55FAA9004A31E0 /* BridgingHeader.h */,
+				9324FF651A46995D00A07580 /* ViewController.swift */,
+				93C331B81A46C607004ECEAB /* DetailViewController.swift */,
+				93BEF93E1A53B01D00F33AD5 /* Camera */,
+				9324FF851A469CB700A07580 /* PicVoteTableViewCell.swift */,
+				9324FF871A469E5D00A07580 /* Post.swift */,
+				93C05AE71A47C793006F06BD /* Comment.swift */,
+				93C05AE51A47C6DC006F06BD /* MultiMediaView.swift */,
+				9324FF671A46995D00A07580 /* Main.storyboard */,
+				9324FF6A1A46995D00A07580 /* Images.xcassets */,
+				9324FF6C1A46995D00A07580 /* LaunchScreen.xib */,
+				9324FF611A46995D00A07580 /* Supporting Files */,
+			);
+			path = Stopgapp;
+			sourceTree = "<group>";
+		};
+		9324FF611A46995D00A07580 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9324FF621A46995D00A07580 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9324FF761A46995D00A07580 /* StopgappTests */ = {
+			isa = PBXGroup;
+			children = (
+				9324FF791A46995D00A07580 /* StopgappTests.swift */,
+				9324FF771A46995D00A07580 /* Supporting Files */,
+			);
+			path = StopgappTests;
+			sourceTree = "<group>";
+		};
+		9324FF771A46995D00A07580 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9324FF781A46995D00A07580 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93917C8F1A4912C0003F56E7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				93BEF93C1A53A4A900F33AD5 /* cameraCapture@2x.png */,
+				93917C901A4912F1003F56E7 /* downvote.png */,
+				93917C921A4912F9003F56E7 /* upvote.png */,
+				9324FF831A469BE900A07580 /* ImageUnavailable.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		93BEF93E1A53B01D00F33AD5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				93917C941A49182E003F56E7 /* CameraViewController.swift */,
+				93BEF93A1A539EFA00F33AD5 /* CameraOverlay.swift */,
+				93BEF9381A539BA000F33AD5 /* CameraOverlay.xib */,
+				93BF48E21A54F88700A3F2B7 /* EditPostViewController.swift */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		93BFE82E1A57A29600F5F3E3 /* AWS */ = {
+			isa = PBXGroup;
+			children = (
+				93C3338A1A563E9D009B4954 /* AWShelper.m */,
+				93C3338C1A563EB5009B4954 /* AWShelper.h */,
+				93BFE82D1A57A28800F5F3E3 /* AWSconstants.h */,
+				93BFE82F1A57A2B600F5F3E3 /* AWSconstants.m */,
+				93BFE8321A59EB3600F5F3E3 /* DDBTableRow.h */,
+				93BFE8331A59EB4700F5F3E3 /* DDBTableRow.m */,
+				93C147491A8BC15400566765 /* DDBCommentRow.h */,
+				93C147471A8BC13400566765 /* DDBCommentRow.m */,
+			);
+			name = AWS;
+			sourceTree = "<group>";
+		};
+		93C26DA41A55F8B1004A31E0 /* JsonFils */ = {
+			isa = PBXGroup;
+			children = (
+				93BFE8091A57409B00F5F3E3 /* autoscaling-2011-01-01.json */,
+				93BFE80A1A57409B00F5F3E3 /* cognito-identity-2014-06-30.json */,
+				93BFE80B1A57409B00F5F3E3 /* css-2014-06-30.json */,
+				93BFE80C1A57409B00F5F3E3 /* dynamodb-2012-08-10.json */,
+				93BFE80D1A57409B00F5F3E3 /* ec2-2014-09-01.json */,
+				93BFE80E1A57409B00F5F3E3 /* elasticloadbalancing-2012-06-01.json */,
+				93BFE80F1A57409B00F5F3E3 /* email-2010-12-01.json */,
+				93BFE8101A57409B00F5F3E3 /* kinesis-2013-12-02.json */,
+				93BFE8111A57409B00F5F3E3 /* mobileanalytics-2014-06-30.json */,
+				93BFE8121A57409B00F5F3E3 /* monitoring-2010-08-01.json */,
+				93BFE8131A57409B00F5F3E3 /* s3-2006-03-01.json */,
+				93BFE8141A57409B00F5F3E3 /* sdb-2009-04-15.json */,
+				93BFE8151A57409B00F5F3E3 /* sns-2010-03-31.json */,
+				93BFE8161A57409B00F5F3E3 /* sqs-2012-11-05.json */,
+				93BFE8171A57409B00F5F3E3 /* sts-2011-06-15.json */,
+			);
+			name = JsonFils;
+			sourceTree = "<group>";
+		};
+		93C26DA51A55F8D1004A31E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93BFE82B1A576BD400F5F3E3 /* CoreLocation.framework */,
+				93BFE8291A57418500F5F3E3 /* AWSCognitoSync.framework */,
+				93BFE8271A57416100F5F3E3 /* AWSiOSSDKv2.framework */,
+				93C26D761A55F859004A31E0 /* Bolts.framework */,
+				93C26D771A55F859004A31E0 /* FMDB.framework */,
+				93C26D781A55F859004A31E0 /* GZIP.framework */,
+				93C26D791A55F859004A31E0 /* Mantle.framework */,
+				93C26D7A1A55F859004A31E0 /* Reachability.framework */,
+				93C26D7B1A55F859004A31E0 /* TMCache.framework */,
+				93C26D7C1A55F859004A31E0 /* UICKeyChainStore.framework */,
+				93C26D7D1A55F859004A31E0 /* XMLDictionary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9324FF5D1A46995D00A07580 /* Stopgapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9324FF7D1A46995D00A07580 /* Build configuration list for PBXNativeTarget "Stopgapp" */;
+			buildPhases = (
+				9324FF5A1A46995D00A07580 /* Sources */,
+				9324FF5B1A46995D00A07580 /* Frameworks */,
+				9324FF5C1A46995D00A07580 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stopgapp;
+			productName = Stopgapp;
+			productReference = 9324FF5E1A46995D00A07580 /* Stopgapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9324FF721A46995D00A07580 /* StopgappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9324FF801A46995D00A07580 /* Build configuration list for PBXNativeTarget "StopgappTests" */;
+			buildPhases = (
+				9324FF6F1A46995D00A07580 /* Sources */,
+				9324FF701A46995D00A07580 /* Frameworks */,
+				9324FF711A46995D00A07580 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9324FF751A46995D00A07580 /* PBXTargetDependency */,
+			);
+			name = StopgappTests;
+			productName = StopgappTests;
+			productReference = 9324FF731A46995D00A07580 /* StopgappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9324FF561A46995D00A07580 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = GRANTGOLDEN;
+				TargetAttributes = {
+					9324FF5D1A46995D00A07580 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9324FF721A46995D00A07580 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 9324FF5D1A46995D00A07580;
+					};
+				};
+			};
+			buildConfigurationList = 9324FF591A46995D00A07580 /* Build configuration list for PBXProject "Stopgapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9324FF551A46995D00A07580;
+			productRefGroup = 9324FF5F1A46995D00A07580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9324FF5D1A46995D00A07580 /* Stopgapp */,
+				9324FF721A46995D00A07580 /* StopgappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9324FF5C1A46995D00A07580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93917C931A4912F9003F56E7 /* upvote.png in Resources */,
+				93BEF93D1A53A4A900F33AD5 /* cameraCapture@2x.png in Resources */,
+				93BFE8261A57409B00F5F3E3 /* sts-2011-06-15.json in Resources */,
+				9324FF691A46995D00A07580 /* Main.storyboard in Resources */,
+				93BFE8241A57409B00F5F3E3 /* sns-2010-03-31.json in Resources */,
+				93BEF9391A539BA000F33AD5 /* CameraOverlay.xib in Resources */,
+				93BFE8231A57409B00F5F3E3 /* sdb-2009-04-15.json in Resources */,
+				9324FF6E1A46995D00A07580 /* LaunchScreen.xib in Resources */,
+				93BFE8251A57409B00F5F3E3 /* sqs-2012-11-05.json in Resources */,
+				93BFE81D1A57409B00F5F3E3 /* elasticloadbalancing-2012-06-01.json in Resources */,
+				9324FF841A469BE900A07580 /* ImageUnavailable.png in Resources */,
+				93BFE81F1A57409B00F5F3E3 /* kinesis-2013-12-02.json in Resources */,
+				93BFE81C1A57409B00F5F3E3 /* ec2-2014-09-01.json in Resources */,
+				93BFE8211A57409B00F5F3E3 /* monitoring-2010-08-01.json in Resources */,
+				93BFE81E1A57409B00F5F3E3 /* email-2010-12-01.json in Resources */,
+				93BFE8221A57409B00F5F3E3 /* s3-2006-03-01.json in Resources */,
+				93BFE81A1A57409B00F5F3E3 /* css-2014-06-30.json in Resources */,
+				93BFE81B1A57409B00F5F3E3 /* dynamodb-2012-08-10.json in Resources */,
+				93BFE8201A57409B00F5F3E3 /* mobileanalytics-2014-06-30.json in Resources */,
+				93BFE8191A57409B00F5F3E3 /* cognito-identity-2014-06-30.json in Resources */,
+				93917C911A4912F1003F56E7 /* downvote.png in Resources */,
+				93BFE8181A57409B00F5F3E3 /* autoscaling-2011-01-01.json in Resources */,
+				9324FF6B1A46995D00A07580 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9324FF711A46995D00A07580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9324FF5A1A46995D00A07580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9324FF661A46995D00A07580 /* ViewController.swift in Sources */,
+				93BFE8341A59EB4700F5F3E3 /* DDBTableRow.m in Sources */,
+				93BFE8301A57A2B600F5F3E3 /* AWSconstants.m in Sources */,
+				9324FF641A46995D00A07580 /* AppDelegate.swift in Sources */,
+				93C331B91A46C607004ECEAB /* DetailViewController.swift in Sources */,
+				93C05AE81A47C793006F06BD /* Comment.swift in Sources */,
+				9324FF861A469CB700A07580 /* PicVoteTableViewCell.swift in Sources */,
+				93C147481A8BC13400566765 /* DDBCommentRow.m in Sources */,
+				93BEF93B1A539EFA00F33AD5 /* CameraOverlay.swift in Sources */,
+				93917C951A49182E003F56E7 /* CameraViewController.swift in Sources */,
+				9324FF881A469E5D00A07580 /* Post.swift in Sources */,
+				93C3338B1A563E9D009B4954 /* AWShelper.m in Sources */,
+				93BF48E31A54F88700A3F2B7 /* EditPostViewController.swift in Sources */,
+				93C05AE61A47C6DC006F06BD /* MultiMediaView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9324FF6F1A46995D00A07580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9324FF7A1A46995D00A07580 /* StopgappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9324FF751A46995D00A07580 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9324FF5D1A46995D00A07580 /* Stopgapp */;
+			targetProxy = 9324FF741A46995D00A07580 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9324FF671A46995D00A07580 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9324FF681A46995D00A07580 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9324FF6C1A46995D00A07580 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9324FF6D1A46995D00A07580 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9324FF7B1A46995D00A07580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9324FF7C1A46995D00A07580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9324FF7E1A46995D00A07580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/grant/Downloads/aws-ios-sdk-2.0.13/frameworks",
+					"/Users/grant/Downloads/aws-ios-sdk-2.0.13/frameworks/extras",
+				);
+				INFOPLIST_FILE = Stopgapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Stopgapp/BridgingHeader.h;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9324FF7F1A46995D00A07580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/grant/Downloads/aws-ios-sdk-2.0.13/frameworks",
+					"/Users/grant/Downloads/aws-ios-sdk-2.0.13/frameworks/extras",
+				);
+				INFOPLIST_FILE = Stopgapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Stopgapp/BridgingHeader.h;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9324FF811A46995D00A07580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StopgappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stopgapp.app/Stopgapp";
+			};
+			name = Debug;
+		};
+		9324FF821A46995D00A07580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StopgappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stopgapp.app/Stopgapp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9324FF591A46995D00A07580 /* Build configuration list for PBXProject "Stopgapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9324FF7B1A46995D00A07580 /* Debug */,
+				9324FF7C1A46995D00A07580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9324FF7D1A46995D00A07580 /* Build configuration list for PBXNativeTarget "Stopgapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9324FF7E1A46995D00A07580 /* Debug */,
+				9324FF7F1A46995D00A07580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9324FF801A46995D00A07580 /* Build configuration list for PBXNativeTarget "StopgappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9324FF811A46995D00A07580 /* Debug */,
+				9324FF821A46995D00A07580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9324FF561A46995D00A07580 /* Project object */;
+}
